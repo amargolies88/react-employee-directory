@@ -12,16 +12,20 @@ code {
     monospace;
 }
 
-.employee-table-header{
+.employee-table-header {
   margin-bottom: 10px;
   margin-top: 10px;
 }
 
-.employee-header-button, .employee-header-button:hover, .employee-header-button:active, .employee-header-button:focus {
+.employee-header-button,
+.employee-header-button:hover,
+.employee-header-button:active,
+.employee-header-button:focus {
   background-color: transparent;
   border-style: solid;
   border-top-width: 0px;
   border-bottom-width: 2px;
   border-left-width: 0px;
   border-right-width: 0px;
+  outline: none;
 }
