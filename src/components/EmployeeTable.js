@@ -62,7 +62,7 @@ const EmployeeTable = ({ sortBy }) => {
                                 </div>
                             );
                         } else {
-                            return "";
+                            return null;
                         }
                     })
                 }

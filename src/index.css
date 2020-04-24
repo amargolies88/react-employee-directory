@@ -29,3 +29,7 @@ code {
   border-right-width: 0px;
   outline: none;
 }
+
+input::placeholder {
+  text-align: center;
+}
