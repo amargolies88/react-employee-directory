@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+var docWidth = document.documentElement.offsetWidth;
+
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
@@ -15,3 +18,12 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function (el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);

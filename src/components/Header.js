@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+import FilterContext from "./FilterContext";
 
 const Header = () => {
+    const filterC = useContext(FilterContext);
+
     return (
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="display-4">Employee Directory</h1>
-                <p class="lead">Click column titles to sort!</p>
-                <input type="text"></input>
+        <div className="jumbotron jumbotron-fluid">
+            <div className="container">
+                <h1 className="display-4">Employee Directory</h1>
+                <p className="lead">Click column titles to sort!</p>
+                <input onChange={filterC.handleInputChange} placeholder="Filter by Name" type="text"></input>
             </div>
         </div>
     )
