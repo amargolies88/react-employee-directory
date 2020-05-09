@@ -7,7 +7,6 @@ const EmployeeTable = ({ sortBy }) => {
     const employees = useContext(EmployeeContext);
     const sorts = useContext(SortContext);
     const filterC = useContext(FilterContext);
-    console.log(filterC);
     if (employees.length > 0) {
         return (
             <div className="container mb-3">
